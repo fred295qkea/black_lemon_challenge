@@ -1,0 +1,76 @@
+.header_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.left_icons,
+.header_icon,
+.right_icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.left_icons {
+  img {
+    width: 20%;
+  }
+}
+
+.header_icon {
+  justify-content: center;
+  img {
+    width: 50%;
+  }
+}
+
+.right_icons {
+  justify-content: end;
+
+  img {
+    width: 20%;
+  }
+
+  .desktop_search {
+    display: none;
+  }
+}
+
+.navigation {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .left_icons {
+    display: none;
+  }
+
+  .header_icon {
+    justify-content: start;
+    width: 40%;
+
+    img {
+      border: 1px solid black;
+    }
+  }
+
+  .right_icons {
+    img {
+      width: 10%;
+    }
+    .desktop_search {
+      display: block;
+    }
+  }
+
+  .navigation {
+    display: block;
+    align-content: center;
+
+    ul {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
