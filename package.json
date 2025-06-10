@@ -1,0 +1,13 @@
+{
+  "name": "black_lemon_challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "dev": "parcel src/index.html --open"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
